@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School application-form</title>
+    <link rel="shortcut icon" href="./form1.jpg" type="image/x-icon">
+    <style>
+        #bold{
+            font-weight:bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center; color: rgb(123, 40, 7); margin-bottom: -10px;">Government High School , Ameerpet <br> Hyderabad-500016</h1><br>
+        <h2 style="text-align: center; margin-bottom: -30px; color: rgb(251, 82, 82);">Student Application Form </h2>
+    </header>
+
+    <main>
+        <form action="">
+            <div style="margin-inline: 180px;">
+                <fieldset style="background-color:azure;">
+                    <legend>
+                        <h2>Student Details:</h2>
+                    </legend>
+                    <strong style="color: rgb(227, 5, 5);"> Required fields defined with *</strong>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>
+                                <br>
+                                <label for="FirstName" id="bold">First Name*:</label>
+                                <input type="text" name="nam1" id="FirstName" required maxlength="15">
+                            </td>
+                            <td>
+                                <br>
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+                                <label for="FathName" id="bold">Middle Name*:</label>
+                                <input type="text" name="nam2" id="FathName" maxlength="15" required>
+                            </td>
+
+                            <td>
+                                <br>
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+
+                                <label for="LastName" id="bold">Last Name*:</label>
+                                <input type="text" name="nam2" id="LastName" required maxlength="15">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br>
+                                <label for="DoB" id="bold">Date of Birth*:</label>
+                                <input type="date" name="dob" id="DoB" required>
+                            </td>
+
+                            <td>
+                                <br>
+                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="BirthPlace" id="bold">Place of Birth:</label>
+                                <input type="text" name="birthplace" id="BirthPlace" maxlength="12">
+                            </td>
+
+                            <td>
+                                <br>
+                                <p style="margin-bottom: -19px;"  id="bold">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender:</p>
+                                
+                                <label
+                                    for="Male" id="bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Male</label>
+                                <input type="radio" name="gender" id="Male">
+
+                                <label for="Female"  id="bold">&nbsp;&nbsp;Female</label>
+                                <input type="radio" name="gender" id="Female">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                <label for="Religon" id="bold">Religion:</label>
+                                <select name="religion" id="Religon">
+                                    <option value="">Select Here</option>
+                                    <option value="Hindu">Hindu</option>
+                                    <option value="Jain">Jain</option>
+                                    <option value="Christian">Christian</option>
+                                    <option value="Buddhist">Buddhist</option>
+                                    <option value="Other">Other..</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <br>
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                                <label for="Nation" id="bold">Nationality*:</label>
+                                <input type="text" name="nation" id="Nation" required>
+                            </td>
+
+                            <td>
+                                <br>
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+
+                                <label for="State" id="bold">State*:</label>
+                                <input type="text" name="state" id="State" maxlength="15" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br><br>
+                                <label for="Aadhar" id="bold">Aadhar No.*:</label>
+                                <input type="tel" name="aadharno" id="Aadhar" minlength="12" maxlength="12" required>
+                            </td>
+                            <td>
+                                <br><br>
+                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="Mobile" id="bold">Mobile.*:</label>
+                                <input type="tel" name="tel" id="Mobile" minlength="10" maxlength="10" required>
+                            </td>
+                            <td>
+                                <br><br>
+                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="HomeNo" id="bold">Home Mobile:</label>
+                                <input type="tel" name="homeno" id="HomeNo" minlength="10" maxlength="10">
+
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br><br>
+                                <label for="Add" id="bold">Address*:</label>
+                                <textarea name="add" id="Add" cols="20" rows="5"
+                                    placeholder="Enter full address..."></textarea>
+                            </td>
+
+                            <td>
+                                <br><br>
+                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="Pcode" id="bold">PinCode*:</label>
+                                <input type="number" name="pcode" id="Pcode" maxlength="6" required>
+                            </td>
+
+                            <td>
+                                <br><br>
+                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="MotherName" id="bold">Mother Name*:</label>
+                                <input type="text" name="mothername" id="MotherName" maxlength="15" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br><br>
+                                <label for="Email" id="bold">Email*:</label>
+                                <input type="email" name="email" id="Email" required>
+                            </td>
+                            <td>
+                                <br><br>
+                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="MTongue" id="bold">Mother Tongue:</label>
+                                <input type="text" name="mtongue" id="MTongue" maxlength="10">
+                            </td>
+                            <td>
+                                <br><br>
+                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="BloodGrp" id="bold">Blood Group:</label>
+                                <input type="text" name="bloodgrp" id="BloodGrp" maxlength="3">
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <br><br>
+                                <label for="File" id="bold">Upload previous year marksheet*:</label><br><br>
+                                <input type="file" name="marksheet" id="File" required>
+                            </td>
+                            <td>
+                                <br><br>
+                                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="Class" id="bold">Select your standard*:</label>
+                                <select name="class" id="Class">
+                                    <option value="">select here..</option>
+                                    <option value="class9">9<sup>th</sup> std</option>
+                                    <option value="class10">10<sup>th</sup> std</option>
+                                    <option value="class11">11<sup>th</sup> std</option>
+                                    <option value="class12">12<sup>th</sup> std</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" style="text-align: center;"><br><br>
+                                <button type="reset" style="background-color: coral;"><strong>Reset Form</strong></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button type="submit" style="background-color:chartreuse;">
+                                    <strong>Submit Application</strong>
+                                </button>
+                            </td>
+                        </tr>
+
+
+                    </table><br><br><br>
+                </fieldset>
+
+
+            </div>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
